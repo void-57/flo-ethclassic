@@ -1210,6 +1210,8 @@
                 }
 
                 // Update browser URL without reloading the page
+                window.history.pushState({}, '', url.pathname + url.search + url.hash);
+
                 const txDetails = await ethOperator.getTransactionDetails(txHash);
 
                 // Update the search input field to reflect the transaction hash
