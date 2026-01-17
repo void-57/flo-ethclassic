@@ -238,9 +238,7 @@
   ]
   const CONTRACT_ADDRESSES = {
     // Ethereum Classic network token addresses
-    usdc: "0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a", // USDC on Ethereum Classic
-    usdt: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2", // USDT on Ethereum Classic
-    wetc: "0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a"  // Wrapped ETC on Ethereum Classic
+    wetc: "0x1953cab0E5bFa6D4a9BaD6E05fD46C1CC6527a5a"  // Wrapped ETC (canonical address)
   }
   /**
    * Get Ethereum Classic provider (MetaMask or public RPC)

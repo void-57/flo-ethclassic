@@ -1038,14 +1038,6 @@
                             <b id="ether_balance">${etherBalance} ETC</b>
                         </li>
                         <li class="flex align-center space-between">
-                            <p>USDC</p>
-                            <b id="usdc_balance">${usdcBalance} USDC</b>
-                        </li>
-                        <li class="flex align-center space-between">
-                            <p>USDT</p>
-                            <b id="usdt_balance">${usdtBalance} USDT</b>
-                        </li>
-                        <li class="flex align-center space-between">
                             <p>WETC</p>
                             <b id="wetc_balance">${wetcBalance} WETC</b>
                         </li>
@@ -1437,8 +1429,6 @@
                                     </sm-input>
                                     <sm-chips id="asset_selector" onchange=${handleAssetChange}>
                                         <sm-chip value="etc" selected>ETC</sm-chip>
-                                        <sm-chip value="usdc">USDC</sm-chip>
-                                        <sm-chip value="usdt">USDT</sm-chip>
                                         <sm-chip value="wetc">WETC</sm-chip>
                                     </sm-chips>
                                 </div>
@@ -1669,8 +1659,6 @@
                                 showTransactionResult('confirmed', { txHash: tx.hash });
                                 break;
                             }
-                            case 'usdc':
-                            case 'usdt':
                             case 'wetc': {
                                 const tx = await ethOperator.sendToken({
                                     privateKey,
